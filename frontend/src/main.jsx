@@ -43,6 +43,7 @@ const router = createBrowserRouter(
         <Route path='update-profile' element={<Doctor_Update_Profile />} />
       </Route>
       <Route path='/' element={<Layout />}>
+  
         {/* User Route */}
         <Route path='user'>
           <Route path='login' element={<User_Signin />} />

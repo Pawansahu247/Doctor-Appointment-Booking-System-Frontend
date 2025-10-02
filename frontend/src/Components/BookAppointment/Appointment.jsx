@@ -1,7 +1,7 @@
 import React from 'react'
 import Doctor_Card from './Doctor_Card'
 import doctors from './Doctor_Data.json'
-import FAQ_Chatbot from './FAQ_Chatbot' // Import the new component
+
 
 function Appointment() {
   return (
@@ -12,9 +12,6 @@ function Appointment() {
         {doctors.map((doctor) => (
           <Doctor_Card key={doctor.id} doctor={doctor} />
         ))}
-      </div>
-      <div className='w-1/4 h-screen'>
-        <FAQ_Chatbot />
       </div>
     </div>
   )
